@@ -7,4 +7,41 @@
   top: 0;
   display: flex;
   flex-direction: column;
+  transition: 1s ease-out;
+  overflow: hidden;
+}
+
+.navbar:hover {
+  width: 320px;
+}
+
+.navbar__container {
+  background-color: #222;
+  width: 660px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  height: 47px;
+  box-sizing: border-box;
+}
+
+.navbar__container:hover i {
+  color: #a00;
+}
+
+.navbar__container i {
+  font-size: 35px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.navbar p {
+  display: inline-block;
+  color: aliceblue;
+  margin-left: 24px;
 }
