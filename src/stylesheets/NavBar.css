@@ -9,10 +9,12 @@
   flex-direction: column;
   transition: 1s ease-out;
   overflow: hidden;
+  z-index: 400;
+  border-right: #a00 solid 1px;
 }
 
 .navbar:hover {
-  width: 320px;
+  width: 370px;
 }
 
 .navbar__container {
