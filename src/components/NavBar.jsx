@@ -6,7 +6,7 @@ import { PiFolderSimpleUserLight } from "react-icons/pi";
 
 function NavBar() {
   return (
-    <div className="navbar">
+    <div className="mynavbar">
       <a href="" className="navbar__container">
         <i>
           <BsGithub></BsGithub>

@@ -1,4 +1,4 @@
-.navbar {
+.mynavbar {
   background-color: #222;
   width: 75px;
   height: 100vh;
@@ -13,7 +13,7 @@
   border-right: #a00 solid 1px;
 }
 
-.navbar:hover {
+.mynavbar:hover {
   width: 370px;
 }
 
@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.navbar p {
+.mynavbar p {
   display: inline-block;
   color: aliceblue;
   margin-left: 24px;
