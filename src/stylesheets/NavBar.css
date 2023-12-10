@@ -31,6 +31,10 @@
   box-sizing: border-box;
 }
 
+.navbar__container:first-child {
+  margin: 40px 20px 20px 20px;
+}
+
 .navbar__container:hover i {
   color: #a00;
 }

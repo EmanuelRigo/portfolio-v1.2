@@ -60,6 +60,9 @@
 .cajas:hover .firebase {
   color: #ffcb2b;
 }
+.cajas:hover .sass {
+  color: #cc6699;
+}
 
 .skills__proyects-container {
   display: flex;

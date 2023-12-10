@@ -1,5 +1,6 @@
 import React from "react";
 import "../stylesheets/Skills.css";
+import Project from "./Project";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import {
   BiLogoCss3,
@@ -10,9 +11,10 @@ import {
   BiLogoGit,
   BiLogoFirebase,
 } from "react-icons/bi";
-import Project from "./Project";
-import { FaBootstrap } from "react-icons/fa";
+
+import { FaBootstrap, FaSass } from "react-icons/fa";
 import { useState } from "react";
+import { Row, Col } from "react-bootstrap";
 
 function Skills() {
   const [nombreLenguaje, setNombreLenguaje] = useState();
@@ -24,79 +26,96 @@ function Skills() {
   return (
     <div className="skills">
       <h2>Habilidades en {nombreLenguaje} </h2>
-      <div className="skills__container">
-        <div
-          data-nombre="Html"
-          onMouseEnter={handleChangeName}
-          className="cajas"
-        >
-          <AiFillHtml5 className="icono html"></AiFillHtml5>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Css"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoCss3 className="icono css"></BiLogoCss3>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="JavaScript"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoJavascript className="icono js"></BiLogoJavascript>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="ReactJs"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoReact className="icono react"></BiLogoReact>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="NodeJs"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoNodejs className="icono nodejs"></BiLogoNodejs>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Bootstrap"
-          onMouseEnter={handleChangeName}
-        >
-          <FaBootstrap className="icono bootstrap"></FaBootstrap>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Tailwind"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoTailwindCss className="icono tailwind"></BiLogoTailwindCss>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Github"
-          onMouseEnter={handleChangeName}
-        >
-          <AiFillGithub className="icono github"></AiFillGithub>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Git"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoGit className="icono git"></BiLogoGit>
-        </div>
-        <div
-          className="cajas"
-          data-nombre="Firebase"
-          onMouseEnter={handleChangeName}
-        >
-          <BiLogoFirebase className="icono firebase"></BiLogoFirebase>
-        </div>
-      </div>
-      <div className="skills__proyects-container">
+
+      <Row className="justify-content-center ">
+        <Col xs={"auto"} className="d-flex p-0">
+          <div
+            data-nombre="Html"
+            onMouseEnter={handleChangeName}
+            className="cajas "
+          >
+            <AiFillHtml5 className="icono html"></AiFillHtml5>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="Css"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoCss3 className="icono css"></BiLogoCss3>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="JavaScript"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoJavascript className="icono js"></BiLogoJavascript>
+          </div>
+        </Col>
+        <Col xs={"auto"} className="d-flex p-0">
+          <div
+            className="cajas"
+            data-nombre="ReactJs"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoReact className="icono react"></BiLogoReact>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="NodeJs"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoNodejs className="icono nodejs"></BiLogoNodejs>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="Bootstrap"
+            onMouseEnter={handleChangeName}
+          >
+            <FaBootstrap className="icono bootstrap"></FaBootstrap>
+          </div>
+        </Col>
+        <Col xs={"auto"} className="d-flex p-0">
+          <div
+            className="cajas"
+            data-nombre="Tailwind"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoTailwindCss className="icono tailwind"></BiLogoTailwindCss>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="Github"
+            onMouseEnter={handleChangeName}
+          >
+            <AiFillGithub className="icono github"></AiFillGithub>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="Git"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoGit className="icono git"></BiLogoGit>
+          </div>
+        </Col>
+        <Col xs={"auto"} className="d-flex p-0">
+          <div
+            className="cajas"
+            data-nombre="Firebase"
+            onMouseEnter={handleChangeName}
+          >
+            <BiLogoFirebase className="icono firebase"></BiLogoFirebase>
+          </div>
+          <div
+            className="cajas"
+            data-nombre="Sass"
+            onMouseEnter={handleChangeName}
+          >
+            <FaSass className="icono sass"></FaSass>
+          </div>
+        </Col>
+      </Row>
+
+      {/*       <div className="skills__proyects-container">
         <div className="skills__proyects">
           <div className="skills__proyects-title">
             <h3>proyectos pequeños</h3>
@@ -142,7 +161,7 @@ function Skills() {
             ]}
           ></Project>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
